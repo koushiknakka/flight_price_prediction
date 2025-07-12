@@ -1,24 +1,68 @@
-✈️ Flight Price Prediction Model
-This project is a machine learning-based web application that predicts the price of flights based on various travel details provided by the user. It uses the Random Forest Regressor algorithm, along with other regression techniques, and offers a clean user experience through a Streamlit-based interface.
+# ✈️ Flight Price Prediction Model
 
-📌 Features
-Predicts flight prices based on input parameters like source, destination, airline, departure time, etc.
+This is a machine learning project that predicts flight ticket prices based on multiple travel-related parameters. The model is deployed using **Streamlit** to provide an interactive and user-friendly web interface.
 
-Uses Random Forest Regressor for high-accuracy prediction (~98%).
+---
 
-Compared performance with Lasso, Ridge, and ElasticNet (each ~90% accuracy).
+## 🔍 Overview
 
-Clean UI with Streamlit for seamless user interaction.
+- Built a regression model to predict flight prices.
+- Utilized **Random Forest Regressor** as the primary model.
+- Achieved an accuracy of **~98%** using RFR.
+- Compared with other models:
+  - **Lasso**, **Ridge**, and **ElasticNet** regressors achieved around **90%** accuracy.
+- Performed **feature engineering** and **one-hot encoding** using `pandas.get_dummies()` due to the presence of multiple categorical features.
 
-Encodes categorical variables using Pandas get_dummies() for handling multiple classifiers.
+---
 
-🧠 Model Overview
-Regression Model	Accuracy Score
-Random Forest Regressor	~98%
-Lasso Regression	~90%
-Ridge Regression	~90%
-ElasticNet Regression	~90%
+## 🚀 Features
 
-The Random Forest model outperformed others in terms of R² score and generalization.
+- Predicts flight price using inputs like:
+  - Airline
+  - Source and Destination
+  - Date of Journey
+  - Departure and Arrival Time
+  - Total Stops
+  - Duration
+- Clean and intuitive **Streamlit UI** for better user experience.
+- Trained on cleaned and preprocessed dataset.
 
-Trained on a cleaned dataset with extracted features such as journey date, duration, total stops, and more.
+---
+
+## 🧠 Model Performance
+
+| Model                   | Accuracy (R² Score) |
+|------------------------|---------------------|
+| **Random Forest**       | **~98%**            |
+| Lasso Regression        | ~90%                |
+| Ridge Regression        | ~90%                |
+| ElasticNet Regression   | ~90%                |
+
+---
+
+## 📦 Setup Instructions
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/your-username/flight-price-prediction.git
+   cd flight-price-prediction
+
+2. **Install Dependencies**
+   ```bash
+   pip install -r requirements.txt
+
+3. **Run StreamLit app**
+   ```bash
+   streamlit run app1.py
+
+## 📌 Libraries Used
+
+📌 Libraries Used
+
+- pandas
+- numpy
+- scikit-learn
+- matplotlib
+- seaborn
+- streamlit
+
